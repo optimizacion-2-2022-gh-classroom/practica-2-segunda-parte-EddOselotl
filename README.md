@@ -76,7 +76,7 @@ practica-2-segunda-parte-EddOselotl:
 
 En el siguiente botón se realiza el lanzamiento de un ambiente ejeutable donde se podrá interactuar con el paquete realizado (**MaxFlowAeiu**) y se ejecuta el notebook del reporte.
     
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard/main?labpath=reporte_equipo_2_parte_1_practica_2.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl/main?labpath=%2Fnotebooks_apoyo%2Freimplementacion.ipynb)
 
 ### Docker
 
