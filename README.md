@@ -76,7 +76,7 @@ practica-2-segunda-parte-EddOselotl:
 
 En el siguiente botón se realiza el lanzamiento de un ambiente ejeutable donde se podrá interactuar con el paquete realizado (**MaxFlowAeiu**) y se ejecuta el notebook del reporte.
     
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl/main?labpath=%2Fnotebooks_apoyo%2Freimplementacion.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl/main?labpath=reporte_equipo_2_parte_2_practica_2.ipynb)
 
 ### Docker
 
@@ -93,27 +93,37 @@ Las imágenes de Docker que se utilizaron de referencia para esta práctica se t
 
 Se creó una instancia de AWS con las siguientes características:
   
-  > Máquina m4.16xlarge
+  > Máquina m5.2xlarge
   
-  > AMI ubuntu 20.04 - ami-042e8287309f5df03
+  > AMI ubuntu 20.04
   
-  > Almacenamiento de 100 GB
+  > Almacenamiento de 30 GB
   
-  > En la sección de configuración de _User data_ se utilizo este [script](https://github.com/palmoreck/scripts_for_useful_tools_installations/blob/main/AWS/ubuntu_20.04/optimizacion_2/script_profiling_and_BLAS.sh)
+  > En la sección de configuración de _User data_ se utilizo este [script](https://github.com/ITAM-DS/analisis-numerico-computo-cientifico/wiki/6.Minikube-y-AWS)
 
 <p align = "center">
     <img src="images/aws.png" width="300" height="110" />
 
+
+> **Note** Para poder correr el Notebook del reporte en la instancia de _AWS_ se requiere instalar el paquete `MaxFlowAeiu` en su versión reimplementada (0.1.3), así como el paquete de `cython`, utilizando los siguientes comandos, desde la terminal de la instancia:
+
+```
+pip install "git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src"
+```
+```
+pip install cython
+```   
 ---
 
 ## Resultados obtenidos
 
-Tras la reimpelenetación realizada (con .... ) se obtuvo una mejora significativa en el tiempo de ejecución del método _MaxFlowAeiu_. En la siguientes figuras se mustran los tiempos de ejecución requeridos antes y después de la implementación:
+Tras la reimplementación realizada con compilación a **C**, se obtuvo una mejora significativa en el tiempo de ejecución del método _MaxFlowAeiu_. En la siguiente tabla se mustran una comparación de los tiempos de ejecución requeridos antes y después de la nueva implementación:
 
-
-
-
-
+|     ***Red probada***     |   ***Ejecución (MaxFlowAeiu==0.1.2)***          |  ***Ejecución (MaxFlowAeiu==0.1.3)***   |                       
+|:-------------------------:|:-----------------------------------------------:|:---------------------------------------:|
+|  Pequeña (13 nodos)       |   CPU: 0.006 ms ; Wall Time: 0.011 ms             |  CPU: 0.002 ms ; Wall Time: 0.004 ms  | 
+|  Mediana (44 nodos)       |   CPU: 0.007 ms ; Wall Time: 0.014 ms             |  CPU: 0.002 ms ; Wall Time: 0.004 ms  | 
+|  Grande (1000 nodos)      |   CPU: 0.006 ms ; Wall Time: 0.012 ms             |  CPU: 0.003 ms ; Wall Time: 0.004 ms  | 
 ---
 
 ## Documentación del paquete
