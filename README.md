@@ -60,13 +60,31 @@ practica-2-segunda-parte-EddOselotl:
  ├── dockerfiles                                 <- Carpeta con archivo de Docker que crea la imágen del entorno para la ejecución del método
  │
  ├── notebooks_apoyo                             <- Notebooks de apoyo al proyecto (Aquí se encuentra el NB taggeado para uso con Minikube, Kubeflow y Kale)
+ |
+ ├── src                                         <- Códigos y archivos necesarios para instalar la nueva versión del paquete MaxFlowAeiu           
  │
  └── images                                      <- Contiene las imágenes utilizadas en el repositorio.
 ``` 
 
 ## ¿Qué lenguajes y paqueterías utlizamos?
 
+<img src="images/minikube.jpeg" width="270" height="100" />
 
+[Minikube](https://minikube.sigs.k8s.io/docs/start/)
+
+
+<img src="images/kubeflow.png" width="270" height="100" />
+
+[kubeflow](https://www.kubeflow.org/)
+
+
+<img src="images/kale_logo.png" width="270" height="100" />
+
+[kubeflow-kale](https://github.com/kubeflow-kale/kale)
+
+<img src="images/cython.png" width="270" height="100" />
+
+[Cython](https://cython.org/)    
 
 ---
 
