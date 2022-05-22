@@ -2,8 +2,9 @@
 FROM palmoreck/kale_certs:0.6.1
 USER root
 
-ENV PIP_PACKAGES_COMMON="MaxFlowAeiu==0.1.2 pytest networkx datetime cython"
+ENV PIP_PACKAGES_COMMON="pytest networkx datetime cython"
 #
+RUN pip install git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl/tree/main/src
 RUN pip3 install $PIP_PACKAGES_COMMON
 RUN pip3 install numpy --upgrade
 
