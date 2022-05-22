@@ -3,8 +3,7 @@ numpy
 pandas
 networkx
 matplotlib
-MaxFlowAeiu==0.1.2
+"git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src"
 snakeviz
 cython
 scipy
-line-profiler
