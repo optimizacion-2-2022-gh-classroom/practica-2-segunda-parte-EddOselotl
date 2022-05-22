@@ -1,5 +1,3 @@
-from collections import defaultdict
-
 class MaxFlowAeiu:
     '''
         Finds the paths in order to return the maximum flow in the
@@ -14,15 +12,13 @@ class MaxFlowAeiu:
             N (bool): the number of the nodes in the graph,
             source (int): index the source node of the graph,
             sink (int): index the sink node of the graph.
-            residualgraph(matrix):graph where the residual values 
-                                  of the edges are updated after 
-                                  each iteration.
+            
         '''
         self.graph = graph.copy()
         self.N = len(graph)
         self.source = 0      
         self.sink= self.N-1
-        self.residualgraph = self.graph.copy()
+        self.maximum_flow =0
     
     def busq_anchura(self,source,sink,parent): 
         '''
@@ -79,7 +75,7 @@ class MaxFlowAeiu:
             source (int): index the source node of the graph.
             sink (int): index the sink node of the graph.
         Attributes:
-            residualgraph (matrix):matrix the residual graph,
+            graph (matrix):matrix the residual graph,
             path_flow (float): we need to calculate the min flow of the selected path,
             parent: vector for keeping track of the parents of visited nodes.
         Returns:
@@ -100,24 +96,33 @@ class MaxFlowAeiu:
                 
             while not j == self.source:
                 # se calcula el minimo de todo el path 
-                path_flow=min(path_flow, self.residualgraph[parent[j]][j])
+                path_flow=min(path_flow, self.graph[parent[j]][j])
                 # se asigna el valor del nodo padre  
                 j=parent[j]
 
             
-            # se actualiza los valores residuales de los edges en self.residualgraph
+            # se actualiza los valores residuales de los edges en graph
             v = self.sink
             while not v == self.source:
                 u=parent[v]
-                self.residualgraph[u][v] -= path_flow                   
-                self.residualgraph[v][u] += path_flow
+                self.graph[u][v] -= path_flow                   
+                self.graph[v][u] += path_flow
                 v=parent[v]
 
 
             # se agrega el path_flow para calcular el maximo
-            maximum_flow += path_flow  
+            self.maximum_flow += path_flow  
             
-        return maximum_flow
+        return print("maximun flow is",self.maximum_flow)
+
+    
+    def get_maximumflow(self):
+        '''
+        Get the Maximun flow of the graph, calculate tu algorithom
+        Returns:
+            maximum_flow (int): calculated maximum flow of the graph.
+        '''
+        return self.maximum_flow
     
     # metodo para obtener información del grafo
     def infoMF(self):
