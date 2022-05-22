@@ -4,7 +4,7 @@ USER root
 
 ENV PIP_PACKAGES_COMMON="pytest networkx datetime cython"
 #
-RUN pip install --quiet "git+https://github.com/ITAM-DS/analisis-numerico-computo-cientifico.git#egg=MaxFlowAeiu&subdirectory=src"
+RUN pip install --quiet "git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src"
 RUN pip3 install $PIP_PACKAGES_COMMON
 RUN pip3 install numpy --upgrade
 
