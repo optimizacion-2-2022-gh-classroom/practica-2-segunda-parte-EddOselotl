@@ -21,7 +21,7 @@ jobs:
       - name: Instalar dependencias de Python para el Test
         run: |
           python -m pip install --upgrade pip
-          pip install pandas flake8 pytest networkx scipy 
+          pip install pandas flake8 pytest networkx scipy cython
           pip install "git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src"
 
       - name: Lint with flake8
