@@ -3,7 +3,7 @@ numpy
 pandas
 networkx
 matplotlib
-"git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src"
+git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src
 snakeviz
 cython
 scipy
