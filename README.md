@@ -5,19 +5,19 @@
 
 ## Tabla de contenido:
     
-1. [Integrantes y roles asignados](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#integrantes-y-roles-asignados)
+1. [Integrantes y roles asignados](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#integrantes-y-roles-asignados)
     
-2. [Acerca de este proyecto](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#acerca-de-este-proyecto)
+2. [Acerca de este proyecto](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#acerca-de-este-proyecto)
     
-3. [Estructura básica del repositorio](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#estructura-b%C3%A1sica-del-repositorio)
+3. [Estructura básica del repositorio](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#estructura-b%C3%A1sica-del-repositorio)
     
-4. [¿Qué lenguajes y paqueterías utlizamos?](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#qu%C3%A9-lenguajes-y-paqueter%C3%ADas-utlizamos)
+4. [¿Qué lenguajes y paqueterías utlizamos?](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#qu%C3%A9-lenguajes-y-paqueter%C3%ADas-utlizamos)
 
-5. [Ambientes en Contenedor](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#ambientes-en-contenedor)
+5. [Ambientes en Contenedor](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#ambientes-en-contenedor)
 
-6. [Instancia de AWS](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#instancia-de-aws)
+6. [Instancia de AWS](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotld#instancia-de-aws)
 
-7. [Resultados obtenidos](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#resultados-obtenidos)
+7. [Resultados obtenidos](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotld#resultados-obtenidos)
     
 8. [Referencias](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#referencias)
     
