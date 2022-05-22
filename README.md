@@ -118,7 +118,7 @@ Tras la reimpelenetación realizada (con .... ) se obtuvo una mejora significati
 
 ## Documentación del paquete
 
-La documentación del paquete realizado se hizo con [Sphinx](https://www.sphinx-doc.org/en/master/) y se puede consultar en este [link](https://optimizacion-2-2022-gh-classroom.github.io/practica-2-primera-parte-urieluard/index.html).
+La documentación del paquete realizado se hizo con [Sphinx](https://www.sphinx-doc.org/en/master/) y se puede consultar en este [link](https://optimizacion-2-2022-gh-classroom.github.io/practica-2-segunda-parte-EddOselotl/index.html).
 
 <p align = "center">
     <img src="images/sphinxheader.png" width="300" height="110" />
