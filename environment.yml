@@ -19,3 +19,4 @@ dependencies:
   - snakeviz
   - cython
   - scipy
+  - MaxFlowAeiu==0.1.4
