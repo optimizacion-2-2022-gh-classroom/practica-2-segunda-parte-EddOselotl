@@ -1,5 +1,6 @@
 channels:
   - conda-forge
+  - defaults
 dependencies:
   - python=3.8
   - nodejs=14
@@ -19,4 +20,5 @@ dependencies:
   - snakeviz
   - cython
   - scipy
-  - MaxFlowAeiu==0.1.4
+  - pip:
+    - MaxFlowAeiu==0.1.4
