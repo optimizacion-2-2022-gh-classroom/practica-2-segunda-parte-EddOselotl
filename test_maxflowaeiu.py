@@ -4,9 +4,9 @@ import networkx as nx
 from networkx.algorithms.flow import maximum_flow
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import maximum_flow
-from MaxFlowAeiu import MaxFlowAeiu
 import numpy as np
 from gen_red import gen_red
+from MaxFlowAeiu import MaxFlowAeiu
 
 
 #ejemplo 1
