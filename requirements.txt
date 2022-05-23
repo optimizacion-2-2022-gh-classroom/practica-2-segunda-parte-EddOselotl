@@ -3,7 +3,7 @@ numpy
 pandas
 networkx
 matplotlib
-MaxFlowAeiu==0.1.4
+MaxFlowAeiu
 snakeviz
 cython
 scipy
