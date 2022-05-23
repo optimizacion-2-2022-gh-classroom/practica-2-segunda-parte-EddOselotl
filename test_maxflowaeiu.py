@@ -31,7 +31,9 @@ flow_value_sp=maximum_flow(graph, source1, sink1).flow_value
 #MaxFlowAeiu
 arr_max = d.values.tolist()
 MF=MaxFlowAeiu(arr_max)
-flow_value_aeiu=MF.ford_fulkerson()
+MF.ford_fulkerson()
+flow_value_aeiu=MF.get_maximumflow()
+
 
 
 # ejemplo 2 
@@ -67,7 +69,8 @@ fv_s2=maximum_flow(G_s2, source2, sink2).flow_value
 #MaxFlowAeiu
 arr_max2 = d2.copy()
 MF_2 = MaxFlowAeiu(arr_max2)
-fv_mf2=MF_2.ford_fulkerson()
+MF_2.ford_fulkerson()
+fv_mf2=MF_2.get_maximumflow()
 
 
 #ejemplo 3
@@ -109,7 +112,8 @@ fv_s3=maximum_flow(G_s3, source3, sink3).flow_value
 #MaxFlowAeiu
 arr_max3 = d3.values.tolist().copy()
 MF_3 = MaxFlowAeiu(arr_max3)
-fv_mf3=MF_3.ford_fulkerson()
+MF_3.ford_fulkerson()
+fv_mf3=MF_3.get_maximumflow()
 
 
 
@@ -135,8 +139,8 @@ fv_s4=maximum_flow(G_s4, source4, sink4).flow_value
 #MaxFlowAeiu
 arr_max4 = d4.values.tolist().copy()
 MF_4 = MaxFlowAeiu(arr_max4)
-fv_mf4=MF_4.ford_fulkerson()
-
+MF_4.ford_fulkerson()
+fv_mf4=MF_4.get_maximumflow()
 
 
 
