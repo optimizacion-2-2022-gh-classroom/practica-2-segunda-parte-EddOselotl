@@ -1,9 +1,0 @@
-pytest
-numpy
-pandas
-networkx
-matplotlib
-MaxFlowAeiu
-snakeviz
-cython
-scipy
