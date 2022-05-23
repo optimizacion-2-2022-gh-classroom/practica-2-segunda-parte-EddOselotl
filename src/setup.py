@@ -1,10 +1,7 @@
 #see: https://setuptools.readthedocs.io/en/latest/userguide/package_discovery.html
-from setuptools import setup, find_packages
-import numpy as np
-from Cython.Build import cythonize
-
+from setuptools import setup, Extension, find_packages
 setup(name="MaxFlowAeiu",
-      version="0.1.3",
+      version="0.1.4",
       description=u"Execution of the Fork Fulkerson method to find the maximum flow of a network",
       long_description=open("README.md", "r", encoding="utf-8").read(),
       url="https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl",
@@ -17,9 +14,9 @@ setup(name="MaxFlowAeiu",
       license="MIT",
       keywords='max flow',
       packages=find_packages(),
-      ext_modules = cythonize("MaxFlowAeiu/MaxFlowAeiu.pyx",compiler_directives={'language_level' : 3}),
-      include_dirs=np.get_include(),
+      ext_modules = [Extension("MaxFlowAeiu", ["MaxFlowAeiu/MaxFlowAeiu.c"])],
       install_requires=[
         'numpy>=1.21.5'
-        ]
+        ],
+      python_requires='>=3.8'
       )
