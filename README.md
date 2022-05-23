@@ -5,19 +5,19 @@
 
 ## Tabla de contenido:
     
-1. [Integrantes y roles asignados](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#integrantes-y-roles-asignados)
+1. [Integrantes y roles asignados](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#integrantes-y-roles-asignados)
     
-2. [Acerca de este proyecto](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#acerca-de-este-proyecto)
+2. [Acerca de este proyecto](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#acerca-de-este-proyecto)
     
-3. [Estructura básica del repositorio](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#estructura-b%C3%A1sica-del-repositorio)
+3. [Estructura básica del repositorio](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#estructura-b%C3%A1sica-del-repositorio)
     
-4. [¿Qué lenguajes y paqueterías utlizamos?](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#qu%C3%A9-lenguajes-y-paqueter%C3%ADas-utlizamos)
+4. [¿Qué lenguajes y paqueterías utlizamos?](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#qu%C3%A9-lenguajes-y-paqueter%C3%ADas-utlizamos)
 
-5. [Ambientes en Contenedor](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#ambientes-en-contenedor)
+5. [Ambientes en Contenedor](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl#ambientes-en-contenedor)
 
-6. [Instancia de AWS](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#instancia-de-aws)
+6. [Instancia de AWS](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotld#instancia-de-aws)
 
-7. [Resultados obtenidos](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#resultados-obtenidos)
+7. [Resultados obtenidos](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotld#resultados-obtenidos)
     
 8. [Referencias](https://github.com/optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard#referencias)
     
@@ -60,13 +60,31 @@ practica-2-segunda-parte-EddOselotl:
  ├── dockerfiles                                 <- Carpeta con archivo de Docker que crea la imágen del entorno para la ejecución del método
  │
  ├── notebooks_apoyo                             <- Notebooks de apoyo al proyecto (Aquí se encuentra el NB taggeado para uso con Minikube, Kubeflow y Kale)
+ |
+ ├── src                                         <- Códigos y archivos necesarios para instalar la nueva versión del paquete MaxFlowAeiu           
  │
  └── images                                      <- Contiene las imágenes utilizadas en el repositorio.
 ``` 
 
 ## ¿Qué lenguajes y paqueterías utlizamos?
 
+<img src="images/minikube.jpeg" width="270" height="100" />
 
+[Minikube](https://minikube.sigs.k8s.io/docs/start/)
+
+
+<img src="images/kubeflow.png" width="270" height="100" />
+
+[kubeflow](https://www.kubeflow.org/)
+
+
+<img src="images/kale_logo.png" width="270" height="100" />
+
+[kubeflow-kale](https://github.com/kubeflow-kale/kale)
+
+<img src="images/cython.png" width="270" height="100" />
+
+[Cython](https://cython.org/)    
 
 ---
 
@@ -76,7 +94,7 @@ practica-2-segunda-parte-EddOselotl:
 
 En el siguiente botón se realiza el lanzamiento de un ambiente ejeutable donde se podrá interactuar con el paquete realizado (**MaxFlowAeiu**) y se ejecuta el notebook del reporte.
     
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl/main?labpath=%2Fnotebooks_apoyo%2Freimplementacion.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl/main?labpath=reporte_equipo_2_parte_2_practica_2.ipynb)
 
 ### Docker
 
@@ -93,27 +111,37 @@ Las imágenes de Docker que se utilizaron de referencia para esta práctica se t
 
 Se creó una instancia de AWS con las siguientes características:
   
-  > Máquina m4.16xlarge
+  > Máquina m5.2xlarge
   
-  > AMI ubuntu 20.04 - ami-042e8287309f5df03
+  > AMI ubuntu 20.04
   
-  > Almacenamiento de 100 GB
+  > Almacenamiento de 30 GB
   
-  > En la sección de configuración de _User data_ se utilizo este [script](https://github.com/palmoreck/scripts_for_useful_tools_installations/blob/main/AWS/ubuntu_20.04/optimizacion_2/script_profiling_and_BLAS.sh)
+  > En la sección de configuración de _User data_ se utilizo este [script](https://github.com/ITAM-DS/analisis-numerico-computo-cientifico/wiki/6.Minikube-y-AWS)
 
 <p align = "center">
     <img src="images/aws.png" width="300" height="110" />
 
+
+> **Note** Para poder correr el Notebook del reporte en la instancia de _AWS_ se requiere instalar el paquete `MaxFlowAeiu` en su versión reimplementada (0.1.3), así como el paquete de `cython`, utilizando los siguientes comandos, desde la terminal de la instancia:
+
+```
+pip install "git+https://github.com/optimizacion-2-2022-gh-classroom/practica-2-segunda-parte-EddOselotl.git#egg=MaxFlowAeiu&subdirectory=src"
+```
+```
+pip install cython
+```   
 ---
 
 ## Resultados obtenidos
 
-Tras la reimpelenetación realizada (con .... ) se obtuvo una mejora significativa en el tiempo de ejecución del método _MaxFlowAeiu_. En la siguientes figuras se mustran los tiempos de ejecución requeridos antes y después de la implementación:
+Tras la reimplementación realizada con compilación a **C**, se obtuvo una mejora significativa en el tiempo de ejecución del método _MaxFlowAeiu_. En la siguiente tabla se mustran una comparación de los tiempos de ejecución requeridos antes y después de la nueva implementación:
 
-
-
-
-
+|     ***Red probada***     |   ***Ejecución (MaxFlowAeiu==0.1.2)***          |  ***Ejecución (MaxFlowAeiu==0.1.3)***   |                       
+|:-------------------------:|:-----------------------------------------------:|:---------------------------------------:|
+|  Pequeña (13 nodos)       |   CPU: 0.006 ms ; Wall Time: 0.011 ms             |  CPU: 0.002 ms ; Wall Time: 0.004 ms  | 
+|  Mediana (44 nodos)       |   CPU: 0.007 ms ; Wall Time: 0.014 ms             |  CPU: 0.002 ms ; Wall Time: 0.004 ms  | 
+|  Grande (1000 nodos)      |   CPU: 0.006 ms ; Wall Time: 0.012 ms             |  CPU: 0.003 ms ; Wall Time: 0.004 ms  | 
 ---
 
 ## Documentación del paquete
