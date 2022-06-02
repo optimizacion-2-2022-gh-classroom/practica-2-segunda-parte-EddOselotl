@@ -11,7 +11,7 @@ DIR_RAIZ=/home/<user>/<midir>
 Clone:
 
 ```
-git clone git@github.com:optimizacion-2-2022-gh-classroom/practica-2-primera-parte-urieluard.git $DIR
+git clone git@github.com:sancas96/Final_opt2.git $DIR
 ```
 
 Build:
